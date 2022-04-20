@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "com.kontra.notifications"
+        minSdkVersion 14
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-firestore:21.4.0'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.google.android.gms:play-services:12.0.1"
+
+}
