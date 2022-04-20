@@ -19,3 +19,5 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
+NotificationGatherer/app/google-services.json
+NotificationReceiver/android/app/google-services.json
